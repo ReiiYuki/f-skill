@@ -24,8 +24,8 @@ When analyzing a new feature request, break it down in this exact dependency ord
 3. **Logic & APIs** (Data fetching and helpers)
    - Define types, API calls, and utility scripts.
    - Reference: `script-creation` skill.
-4. **UI Components** (The visual layer)
-   - Build the UI tiers (Presentational, Container, Page).
+4. **Component & Composition** (Visual and structural blocks)
+   - Build the component tiers (Presentational, Container, Controller, Page).
    - Reference: `component-design` skill.
 5. **Testing** (Verification)
    - Write tests for the components and scripts.

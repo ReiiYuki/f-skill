@@ -41,7 +41,7 @@ graph TD
     B -->|Step 1: Setup Modules| C(module-architecture)
     B -->|Step 2: Data Flow| D(state-management)
     B -->|Step 3: APIs & Logic| E(script-creation)
-    B -->|Step 4: UI Layer| F(component-design)
+    B -->|Step 4: Component & Composition| F(component-design)
     B -->|Step 5: Verification| G(testing-convention)
 ```
 
