@@ -61,11 +61,39 @@ These skills capture **opinionated, battle-tested frontend patterns** that apply
 
 ## 🤖 How Agents Use These Skills
 
-Once installed, your AI agent will automatically read the YAML frontmatter of these skills to understand its new capabilities. You can invoke them naturally in conversation:
+Once installed, your AI agent will automatically read the YAML frontmatter of these skills to understand its new capabilities. The true power of `f-skill` lies in the **synergy between these skills**. 
 
-* **Example 1:** *"Hey AI, I need to build a new product card component. Please follow the `component-design` skill guidelines."*
-* **Example 2:** *"I'm going to write tests for the login flow. Let's use our `testing-convention` to structure the describe blocks."*
-* **Example 3:** *"Refactor this giant 500-line widget. Use the responsibility tiers from the component design skill to split it up appropriately."*
+Here are common scenarios and the prompts you can use to trigger the optimal agent workflow:
+
+### Scenario 1: Starting a Brand New Project (Day Zero)
+You want to ensure the agent doesn't write spaghetti code on day one.
+> **Prompt:** *"Initialize a new Next.js / Flutter project in this directory. Before writing any app code, make sure you follow the `project-bootstrap` skill to set up our foundational infrastructure."*
+> 
+> **Agent Action:** The agent will immediately configure the Linter, Prettier, Husky hooks, Gitleaks, Testing framework, and centralized Typed Config before moving on to feature development.
+
+### Scenario 2: Building a Large Feature from Scratch
+You have a complex requirement and want the agent to architect it properly.
+> **Prompt:** *"We need to build a new 'Checkout' flow. Please use the `feature-breakdown` skill to analyze this and present a subtask plan before you start coding."*
+> 
+> **Agent Action:** The agent stops, creates a dependency-ordered plan (Module Setup ➡️ State Management ➡️ API Scripts ➡️ Component Composition ➡️ Testing), and waits for your approval.
+
+### Scenario 3: Deciding Where Data Belongs
+You are unsure if you need Redux/Riverpod or just local state.
+> **Prompt:** *"I need to store the user's selected language, but it affects the whole app. Check the `state-management` decision matrix and tell me where this state should live."*
+> 
+> **Agent Action:** The agent reads the matrix, identifies this as a "Tier 4: Global / App-Wide State" requirement, and suggests using Zustand, Redux, or Provider.
+
+### Scenario 4: Refactoring a Giant Component
+An existing component is 500+ lines and doing too much.
+> **Prompt:** *"Refactor this giant 500-line `UserProfile` widget. Use the responsibility tiers from the `component-design` skill to split it up into Presentational, Container, and Controller components."*
+> 
+> **Agent Action:** The agent strips API calls out of the UI, creates pure visual components with callback props, and wraps them in a logic-handling Container.
+
+### Scenario 5: Standardizing Tests
+You want high-quality tests that act as documentation.
+> **Prompt:** *"I'm going to write tests for the login component. Let's use our `testing-convention` to structure the describe blocks."*
+> 
+> **Agent Action:** The agent generates tests formatted specifically with `describe('Case: ...')` and nests them into Visuals, Lifecycle, and Interactions.
 
 ## 🤝 Contributing
 
