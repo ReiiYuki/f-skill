@@ -3,6 +3,7 @@
 ![100% Frontend](https://img.shields.io/badge/100%25-Frontend-blue?style=for-the-badge)
 ![0% Fail](https://img.shields.io/badge/0%25-Fail-success?style=for-the-badge)
 ![Agent Skills Standard](https://img.shields.io/badge/Agent_Skills-Compatible-purple?style=for-the-badge)
+[![Sponsor](https://img.shields.io/badge/Sponsor-%E2%9D%A4-pink?style=for-the-badge)](https://github.com/sponsors/ReiiYuki)
 
 *F does not stand for fail. It doesn't stand for FF instant noodle either (just kidding). F is for **Frontend**.* 🍜
 
