@@ -28,6 +28,7 @@ This will download the skills into your `.agents/skills` folder, making them imm
 | [`testing-convention`](./testing-convention/SKILL.md) | Framework-agnostic testing philosophy and decision matrix. Guides on unit vs integration vs e2e, component test structure (Visuals/Lifecycle/Interactions), and human-readable documentation. |
 | [`module-architecture`](./module-architecture/SKILL.md) | Organize project structure using a flat, module-based architecture where business features and technical concerns are equal peers. Covers internal folder structure, cross-module boundaries, and origin-based ownership. |
 | [`script-creation`](./script-creation/SKILL.md) | Conventions for writing functions, scripts, and utilities. Covers single function per file, object parameter patterns, documentation requirements, mapper patterns, logic splitting, and co-located tests. |
+| [`state-management`](./state-management/SKILL.md) | Framework-agnostic decision matrix for choosing the right state management approach. Maps state types to 4 architectural tiers: Local Component State, Subtree State, Server State Cache, and Global State. |
 
 ## 🧠 Philosophy
 
