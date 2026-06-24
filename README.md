@@ -98,6 +98,18 @@ You want high-quality tests that act as documentation.
 > 
 > **Agent Action:** The agent generates tests formatted specifically with `describe('Case: ...')` and nests them into Visuals, Lifecycle, and Interactions.
 
+### Scenario 6: Reusing Code & Design Systems
+You want to ensure the agent doesn't hallucinate custom UI elements.
+> **Prompt:** *"Create a warning banner for the dashboard. Use our `component-design` and `feature-breakdown` skills."*
+> 
+> **Agent Action:** The agent performs a **Discovery Phase** to find existing Warning Banner components. If the requested design differs from the Design System, it will push back and ask you to consult the UX/UI designer rather than writing custom inline CSS.
+
+### Scenario 7: Preventing Edge-Case Bloat
+You ask for a feature that is too complex for a single flow.
+> **Prompt:** *"Build an authentication flow that handles Guests, Email Users, OAuth Users, and Enterprise SSO. Follow `script-creation` and `feature-breakdown`."*
+> 
+> **Agent Action:** Triggering the **Complexity Pushback** rule, the agent refuses to build a single "God Function". It pushes back, asking to split the requirements into 4 distinct, manageable sub-flows.
+
 ## 🤝 Contributing
 
 We welcome contributions! If you have a robust frontend pattern you'd like to codify into a skill:
