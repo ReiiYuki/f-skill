@@ -18,6 +18,12 @@ Framework-agnostic conventions for writing functions and scripts. These principl
 
 > A function is a unit of single responsibility. It exists in its own file, takes a single well-typed parameter object, is fully documented, and has co-located tests. If you can't describe what a function does in one sentence without "and", it should be two functions.
 
+## Existing Code First (DRY)
+
+- Before writing any new utility function, formatting script, or API call, you **MUST** search the codebase to ensure it doesn't already exist.
+- Reusing existing code is **always** prioritized over creating new scripts.
+- If a similar script exists but doesn't quite fit the new requirement, refactor the existing script to be more generic rather than duplicating it.
+
 ---
 
 ## Principle 1 — Single Function per File

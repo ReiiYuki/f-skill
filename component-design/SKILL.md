@@ -21,6 +21,12 @@ Framework-agnostic principles for designing components in any component-based UI
 
 > A component is a unit of **single responsibility**. It exists for exactly one reason. If you can describe what a component does and the description contains "and", it should be two components.
 
+## Design System Strictness
+
+- **NEVER** build a custom UI element if a Design System component already exists.
+- If a Figma/UI design requires a component or variant that does not exist in the Design System, you **MUST** pause and ask the user/designer: *"This is not in the Design System. Can we use the standard component, or can you add this to the Design System?"*
+- **NEVER** use inline styles or ad-hoc CSS for colors, spacing, or typography. Always use the project's design tokens.
+
 ---
 
 ## The 7-Tier Component System

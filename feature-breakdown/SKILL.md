@@ -18,19 +18,21 @@ This is the central orchestration skill. Never start writing code for a large fe
 
 When analyzing a new feature request, break it down in this exact dependency order:
 
-1. **Module & File Setup** (Where does it live?)
+1. **Step 0: Discovery Phase** (Find Existing Code)
+   - ALWAYS search the codebase for existing modules, types, utility scripts, or UI components that can be reused *before* creating the plan.
+2. **Module & File Setup** (Where does it live?)
    - Create the directory structure.
    - Reference: `module-architecture` skill.
-2. **State & Data Flow** (How is data managed?)
+3. **State & Data Flow** (How is data managed?)
    - Determine if state is Local, Subtree, Server Cache, or Global.
    - Reference: `state-management` skill.
-3. **Logic & APIs** (Data fetching and helpers)
+4. **Logic & APIs** (Data fetching and helpers)
    - Define types, API calls, and utility scripts.
    - Reference: `script-creation` skill.
-4. **Component & Composition** (Visual and structural blocks)
+5. **Component & Composition** (Visual and structural blocks)
    - Build the component tiers (Presentational, Container, Controller, Page).
    - Reference: `component-design` skill.
-5. **Testing** (Verification)
+6. **Testing** (Verification)
    - Write tests for the components and scripts.
    - Reference: `testing-convention` skill.
 
@@ -43,6 +45,7 @@ When presenting your breakdown plan to the user, use this exact template for eac
 ```markdown
 ### [Task Type] Subtask Name
 **Description:** Why this exists and what it does.
+**Discovery:** What existing code/components will be reused for this task.
 **Todo:** Technical steps to implement (directories, files, logic).
 **Skill Reference:** Which f-skill governs this step.
 **Concern:** Any open questions for the user before starting.
