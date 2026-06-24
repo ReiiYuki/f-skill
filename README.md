@@ -30,13 +30,18 @@ This will download the skills into your `.agents/skills` folder, making them imm
 | [`script-creation`](./script-creation/SKILL.md) | Conventions for writing functions, scripts, and utilities. Covers single function per file, object parameter patterns, documentation requirements, mapper patterns, logic splitting, and co-located tests. |
 | [`state-management`](./state-management/SKILL.md) | Framework-agnostic decision matrix for choosing the right state management approach. Maps state types to 4 architectural tiers: Local Component State, Subtree State, Server State Cache, and Global State. |
 | [`feature-breakdown`](./feature-breakdown/SKILL.md) | **Orchestrator Skill.** Teaches the agent how to plan and slice a large feature into smaller subtasks, mapping each subtask to the other 5 execution skills in a specific dependency order. |
+| [`project-bootstrap`](./project-bootstrap/SKILL.md) | **Day-Zero Skill.** Mandatory infrastructure setup rules (Linting, Security Guardrails, Testing, Config Handling, Version Control) before any code is written. |
 
 ## 🧬 Agent Orchestration Workflow
 
-When an AI agent is asked to build a large feature, it uses `feature-breakdown` to orchestrate the other skills:
+When an AI agent is asked to build a new project or a large feature, it uses these orchestration skills:
 
 ```mermaid
 graph TD
+    Z[User Request: New Project] --> Y{project-bootstrap}
+    Y -->|Must Configure First| X(Lint, Security, Test, Config, Versioning)
+    X --> A
+    
     A[User Request: Build Feature] --> B{feature-breakdown}
     B -->|Step 1: Setup Modules| C(module-architecture)
     B -->|Step 2: Data Flow| D(state-management)
