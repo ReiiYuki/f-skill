@@ -111,8 +111,13 @@ You want to ensure the agent doesn't hallucinate custom UI elements.
 ### Scenario 7: Preventing Edge-Case Bloat
 You ask for a feature that is too complex for a single flow.
 > **Prompt:** *"Build an authentication flow that handles Guests, Email Users, OAuth Users, and Enterprise SSO. Follow `script-creation` and `feature-breakdown`."*
-> 
 > **Agent Action:** Triggering the **Complexity Pushback** rule, the agent refuses to build a single "God Function". It pushes back, asking to split the requirements into 4 distinct, manageable sub-flows.
+
+### Scenario 8: The Universal "One Command" Trigger
+You want the agent to use all `f-skill` conventions without manually listing them out.
+> **Prompt:** *"Build a Shopping Cart feature using the `f-skill-workflow`."*
+> 
+> **Agent Action:** The agent reads the meta-skill, refuses to write code immediately, and delegates the entire prompt to `feature-breakdown`. It then automatically cascades through Discovery, Planning, `module-architecture`, `state-management`, `script-creation`, `component-design`, and `testing-convention` to deliver the feature perfectly.
 
 ## 🤝 Contributing
 
