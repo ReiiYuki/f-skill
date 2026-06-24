@@ -29,6 +29,21 @@ This will download the skills into your `.agents/skills` folder, making them imm
 | [`module-architecture`](./module-architecture/SKILL.md) | Organize project structure using a flat, module-based architecture where business features and technical concerns are equal peers. Covers internal folder structure, cross-module boundaries, and origin-based ownership. |
 | [`script-creation`](./script-creation/SKILL.md) | Conventions for writing functions, scripts, and utilities. Covers single function per file, object parameter patterns, documentation requirements, mapper patterns, logic splitting, and co-located tests. |
 | [`state-management`](./state-management/SKILL.md) | Framework-agnostic decision matrix for choosing the right state management approach. Maps state types to 4 architectural tiers: Local Component State, Subtree State, Server State Cache, and Global State. |
+| [`feature-breakdown`](./feature-breakdown/SKILL.md) | **Orchestrator Skill.** Teaches the agent how to plan and slice a large feature into smaller subtasks, mapping each subtask to the other 5 execution skills in a specific dependency order. |
+
+## 🧬 Agent Orchestration Workflow
+
+When an AI agent is asked to build a large feature, it uses `feature-breakdown` to orchestrate the other skills:
+
+```mermaid
+graph TD
+    A[User Request: Build Feature] --> B{feature-breakdown}
+    B -->|Step 1: Setup Modules| C(module-architecture)
+    B -->|Step 2: Data Flow| D(state-management)
+    B -->|Step 3: APIs & Logic| E(script-creation)
+    B -->|Step 4: UI Layer| F(component-design)
+    B -->|Step 5: Verification| G(testing-convention)
+```
 
 ## 🧠 Philosophy
 
