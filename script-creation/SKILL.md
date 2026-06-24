@@ -139,7 +139,7 @@ Split a function when it grows too complex.
 | Signal | Action |
 |--------|--------|
 | Function exceeds ~30–50 lines | Extract sub-functions |
-| Too many conditional branches | Use mapper pattern or extract branch logic |
+| Cyclomatic Complexity (Too many `if/else`) | **PUSH BACK**: Rethink what the subflow will handle. Refactor using Strategy Pattern or distinct functions. |
 | Each condition branch has significant logic | Extract each branch into its own function |
 | Function does multiple sequential steps | Extract each step into a named function |
 

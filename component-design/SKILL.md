@@ -21,6 +21,8 @@ Framework-agnostic principles for designing components in any component-based UI
 
 > A component is a unit of **single responsibility**. It exists for exactly one reason. If you can describe what a component does and the description contains "and", it should be two components.
 
+**Complexity Pushback (Conditional Bloat):** If a component has too many conditional renders (`if/else`), highly complex loading/error/empty states, or handles multi-variant branching, it violates the single responsibility principle. You **MUST** push back and split the component into discrete variants, or use a Controller/Router component to route to entirely separate UI components.
+
 ## Design System Strictness
 
 - **NEVER** build a custom UI element if a Design System component already exists.

@@ -14,6 +14,12 @@ description: >
 
 This is the central orchestration skill. Never start writing code for a large feature immediately. Always break it down into a plan with discrete subtasks, mapping each subtask to the correct `f-skill` convention.
 
+## Complexity Pushback
+
+If a requested feature has excessive edge cases, multiple complex error states, or highly divergent paths (e.g., "Guest Checkout" vs. "Logged-In Checkout"), **do NOT plan a single massive feature.** You MUST push back. Ask the user/designer to split the feature into completely distinct sub-flows before writing the breakdown plan.
+
+---
+
 ## The Breakdown Flow
 
 When analyzing a new feature request, break it down in this exact dependency order:
