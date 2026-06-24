@@ -7,6 +7,9 @@ description: >
   before any code is written.
 ---
 
+> **⚠️ COMPATIBILITY FIRST:**
+> If you are working in an **existing project**, you MUST prioritize and mimic the project's existing structure, naming conventions, and patterns over the rules in this document. Only apply these `f-skill` rules strictly when starting a **new project**, creating a completely **new module**, or when the user explicitly asks you to follow `f-skill`.
+
 # Feature Breakdown & Orchestration
 
 This is the central orchestration skill. Never start writing code for a large feature immediately. Always break it down into a plan with discrete subtasks, mapping each subtask to the correct `f-skill` convention.

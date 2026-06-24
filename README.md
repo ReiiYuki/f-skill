@@ -52,12 +52,13 @@ graph TD
 
 ## 🧠 Philosophy
 
-These skills capture **opinionated, battle-tested frontend patterns** that apply across modern component-based frameworks. They are built on four core pillars:
+These skills capture **opinionated, battle-tested frontend patterns** that apply across modern component-based frameworks. They are built on five core pillars:
 
-1. **Framework-Agnostic:** The principles work whether you are writing React, Flutter, Vue, or any other component-based UI system.
-2. **Responsibility-Driven:** We focus on *what* a component should do, not arbitrary metrics like line counts.
-3. **Analytics-Ready:** Every action exposes callbacks for seamless integration with tracking and analytics tools.
-4. **Type-Safe & Scalable:** Data is passed as domain objects, utilizing bounded generics for maximum reusability.
+1. **Compatibility First:** Agents must prioritize an existing codebase's rules over `f-skill` conventions. These skills adapt to your legacy code, they don't fight it.
+2. **Framework-Agnostic:** The principles work whether you are writing React, Flutter, Vue, or any other component-based UI system.
+3. **Responsibility-Driven:** We focus on *what* a component should do, not arbitrary metrics like line counts.
+4. **Analytics-Ready:** Every action exposes callbacks for seamless integration with tracking and analytics tools.
+5. **Type-Safe & Scalable:** Data is passed as domain objects, utilizing bounded generics for maximum reusability.
 
 ## 🤖 How Agents Use These Skills
 

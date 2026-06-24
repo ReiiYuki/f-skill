@@ -6,6 +6,9 @@ description: >
   avoiding prop drilling, or managing API data. Framework-agnostic.
 ---
 
+> **⚠️ COMPATIBILITY FIRST:**
+> If you are working in an **existing project**, you MUST prioritize and mimic the project's existing structure, naming conventions, and patterns over the rules in this document. Only apply these `f-skill` rules strictly when starting a **new project**, creating a completely **new module**, or when the user explicitly asks you to follow `f-skill`.
+
 # State Management Decision Matrix
 
 A framework-agnostic mental model for choosing the right state management approach. State should live as close to where it is used as possible, and different types of state require different architectural solutions.

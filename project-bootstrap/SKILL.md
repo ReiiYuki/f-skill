@@ -6,6 +6,9 @@ description: >
   version control. Use when initializing a new codebase before writing any features.
 ---
 
+> **⚠️ COMPATIBILITY FIRST:**
+> If you are working in an **existing project**, you MUST prioritize and mimic the project's existing structure, naming conventions, and patterns over the rules in this document. Only apply these `f-skill` rules strictly when starting a **new project**, creating a completely **new module**, or when the user explicitly asks you to follow `f-skill`.
+
 # Project Bootstrap Requirements
 
 When creating a new project or repository, the AI Agent must never start writing feature code or UI components until these baseline requirements are met. The foundation must be secure, strictly typed, and formatted.

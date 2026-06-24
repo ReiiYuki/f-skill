@@ -10,6 +10,9 @@ description: >
   architecture decisions.
 ---
 
+> **⚠️ COMPATIBILITY FIRST:**
+> If you are working in an **existing project**, you MUST prioritize and mimic the project's existing structure, naming conventions, and patterns over the rules in this document. Only apply these `f-skill` rules strictly when starting a **new project**, creating a completely **new module**, or when the user explicitly asks you to follow `f-skill`.
+
 # Component Design Principles
 
 Framework-agnostic principles for designing components in any component-based UI framework (React, Flutter, Vue, etc.). These principles define **what** a component should be, **when** to split it, **how** to name it, and **how** to design its interface.

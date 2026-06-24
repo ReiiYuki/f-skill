@@ -7,6 +7,9 @@ description: >
   Applies to any language and framework (TypeScript, Dart, JavaScript, etc.).
 ---
 
+> **⚠️ COMPATIBILITY FIRST:**
+> If you are working in an **existing project**, you MUST prioritize and mimic the project's existing structure, naming conventions, and patterns over the rules in this document. Only apply these `f-skill` rules strictly when starting a **new project**, creating a completely **new module**, or when the user explicitly asks you to follow `f-skill`.
+
 # Script Creation and Maintenance
 
 Framework-agnostic conventions for writing functions and scripts. These principles define **how** to structure a function, **how** to design its interface, **how** to document it, and **when** to split it.

@@ -8,6 +8,9 @@ description: >
   any component-based framework (React, Flutter, Next.js, etc.).
 ---
 
+> **⚠️ COMPATIBILITY FIRST:**
+> If you are working in an **existing project**, you MUST prioritize and mimic the project's existing structure, naming conventions, and patterns over the rules in this document. Only apply these `f-skill` rules strictly when starting a **new project**, creating a completely **new module**, or when the user explicitly asks you to follow `f-skill`.
+
 # Module-Based Architecture
 
 Framework-agnostic principles for organizing project structure. These principles define **where** code lives, **how** modules are organized internally, and **how** modules interact with each other.

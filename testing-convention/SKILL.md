@@ -7,6 +7,9 @@ description: >
   framework (Jest, Vitest, Playwright, Cypress, Flutter Test, etc.).
 ---
 
+> **⚠️ COMPATIBILITY FIRST:**
+> If you are working in an **existing project**, you MUST prioritize and mimic the project's existing structure, naming conventions, and patterns over the rules in this document. Only apply these `f-skill` rules strictly when starting a **new project**, creating a completely **new module**, or when the user explicitly asks you to follow `f-skill`.
+
 # Testing Convention
 
 Framework-agnostic testing philosophy and decision matrix. These principles dictate **what** to test, **how** to test it, and how to **organize** test suites.
