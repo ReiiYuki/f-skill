@@ -24,6 +24,7 @@ This will download the skills into your `.agents/skills` folder, making them imm
 
 | Skill | Description |
 |-------|-------------|
+| [`f-skill-workflow`](./f-skill-workflow/SKILL.md) | **Universal Meta-Skill.** A single entrypoint you can invoke to tell the agent to build or refactor a feature using the entire `f-skill` ecosystem. |
 | [`component-design`](./component-design/SKILL.md) | Design and structure UI components using a 7-tier responsibility system with strict naming conventions and callback patterns. Framework-agnostic (React, Flutter, etc.). |
 | [`testing-convention`](./testing-convention/SKILL.md) | Framework-agnostic testing philosophy and decision matrix. Guides on unit vs integration vs e2e, component test structure (Visuals/Lifecycle/Interactions), and human-readable documentation. |
 | [`module-architecture`](./module-architecture/SKILL.md) | Organize project structure using a flat, module-based architecture where business features and technical concerns are equal peers. Covers internal folder structure, cross-module boundaries, and origin-based ownership. |
@@ -38,6 +39,9 @@ When an AI agent is asked to build a new project or a large feature, it uses the
 
 ```mermaid
 graph TD
+    M[User Request: Universal f-skill-workflow] -->|Routes to Orchestrators| Z
+    M --> A
+    
     Z[User Request: New Project] --> Y{project-bootstrap}
     Y -->|Must Configure First| X(Lint, Security, Test, Config, Versioning)
     X --> A
